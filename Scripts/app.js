@@ -49,6 +49,7 @@ let app;
         firstParagraph.innerHTML = " JavaScript is a prototype-based language, and every object in JavaScript has a hidden internal property called Prototype that can be used to extend object properties and methods.";
         //  d
         //  hide the paragraph with an id of firstParagraph
+        // code retrived from:  https://www.w3schools.com/jsref/prop_style_visibility.asp
         document.getElementById("firstParagraph").style.visibility = "hidden";
 
         //Part 2
