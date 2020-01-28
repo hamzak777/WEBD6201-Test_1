@@ -14,11 +14,14 @@ let app;
     // Declare Function Variables here...
     console.log("%cDeclaring Variables", "color: red;")
 
-    //Part A variables
+    //Part 1 variables
     let largeButton;
     let largeButtonParent;
     let H3;
     let firstParagraph;
+
+
+    
 
     /**
      * Variable initialization in this function
@@ -26,7 +29,7 @@ let app;
      */
     function Start()
     {
-        //  Part A
+        //  Part 1
         //  a
         //  replace the Large Button text to Learn More
         largeButton = document.getElementById("largeButton");
@@ -47,6 +50,25 @@ let app;
         //  d
         //  hide the paragraph with an id of firstParagraph
         document.getElementById("firstParagraph").style.visibility = "hidden";
+
+        //Part 2
+        //  a, b, c
+        largeButton.addEventListener("click", function(){
+            //  When the button is clicked toggle between Button text that reads “Hide Details” and “Learn More”
+            //  When the button reads “Hide Details” the paragraph should be visible. When the button
+            //  reads “Learn More” the paragraph should be hidden
+            if(firstParagraph.style.visibility == "hidden"){
+                largeButton.innerHTML = " Hide Details";    //  toogle text
+                firstParagraph.style.visibility = "visible" //  toogle visibility
+            }
+            else if(firstParagraph.style.visibility == "visible"){
+                largeButton.innerHTML = " Learn More";      //  toogle text
+                firstParagraph.style.visibility = "hidden"  //  toogle visibility
+            }
+         });
+
+        
+
         Main();
     }
 
@@ -55,7 +77,7 @@ let app;
      *
      */
     function Main()
-    {
+    {   
 
     }
 
